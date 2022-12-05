@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    height: 91vh;
+    padding: 20px 20px;
+    position: relative;
+    background-image: linear-gradient(45deg, red, #F28627, #007A35, #002E5C, #0D0D0D 50.8%)
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    width: 200px;
+}
+
+.nav-logo > p{
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.logo{
+    width: 80px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link{
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.nav-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.titulos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    
+}
+
+.titulos h1{
+    font-size: 4rem;
+}
+
+.titulos p{
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+
+/* Parte do Main */
+
+section{
+    padding: 50px 50px;
+}
+
+.sobre{
+    display: flex;
+    padding: 0;
+    height: 78vh;
+}
+
+.sobre-grupo{
+    padding: 0 25px 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    background-image: url('../img/grupo-pequeno-porto-mix.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 370px;
+    width: 470px;
+    outline: 12px solid #0A04BF;
+}
+
+.sobre-texto{
+    padding: 50px 50px 50px 30px;
+}
+
+.sobre-texto > h2{
+    font-size: 2rem;
+    padding-bottom: 25px;
+    color: #010549;
+}
+
+.sobre-texto p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.apresentacoes{
+    padding: 2.2rem 120px 50px 120px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.apresentacoes h2{
+    padding-bottom: 25px;
+}
+
+.apresentacoes span{
+    color: #F28627;
+    text-transform: uppercase;
+}
+
+.proposito{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.proposito h2{
+    font-size: 3rem;
+    padding-bottom: 25px;
+}
+
+.propositos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.propositos p{
+    width: 280px;
+}
+
+.icone{
+    height: 100px;
+    padding: 20px;
+}
+
+
+.musica{
+    text-align: center;
+    background-image: url('../img/logo-porto-mix.jpeg');
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 38vh;
+}
+
+.musica h2{
+    padding-bottom: 20px;
+    font-size: 3rem;
+    color: #CCCCCC;
+    text-shadow: 2px 2px 1px #0aca54;
+    font-weight: bolder;
+}
+
+.musica button{
+    border: none;
+    padding: 15px 60px;
+    border-radius: 25px;
+    transition: 0.4s all;
+}
+
+.musica button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.musica button:hover{
+    transform: scale(1.2);
+}
+
+.contato{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Infos */
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+/* Seção esquerda das infos */
+
+.infos-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.infos-section{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+.infos-texts{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.infos-texts span{
+    font-family: PoppinsMedium;
+    line-height: 1px;
+    font-size: 17px;
+}
+
+.infos-texts span a{
+    text-decoration: none;
+    color: black;
+}
+
+.infos-texts p{
+    font-family: PoppinsMedium;
+    color: #6e6e6e;
+    font-size: 15px;
+    padding-top: 12px;
+}
+
+.infos-section img{
+    width: 50px;
+}
+
+.infos-section-botoes{
+    display: inline-flex;
+    width: 75px;
+    height: 75px;
+    background-color: #2673A5;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.vermelho{
+    background-color: rgb(255, 80, 80);
+}
+
+.amarelo{
+    background-color: #F28627;
+}
+
+
+.infos-section-botoes{
+    text-decoration: none;
+}
+
+.infos-section-botoes:hover{
+    background-color: #154A6C;
+}
+
+.vermelho:hover{
+    color: red;
+    background-color: rgb(184, 3, 3);
+}
+
+.amarelo:hover{
+    color: #ff8820;
+    background-color: #cc6f1e;
+}
+
+.infos-section i{
+    transition: 0.4s all;
+}
+
+.infos-section-botoes:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fa-instagram{
+    font-size: 30px;
+    padding-bottom: 5px;
+    transition: 5s ease all;
+}
+
+footer .fa-instagram:hover{
+    color: #F28627;
+    background-image: linear-gradient(to bottom, red, #F28627);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer p{
+    margin: 0;
+}
